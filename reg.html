@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма реєстрації</title>
+</head>
+<body>
+    <div class="zet">
+    <nav>
+        <a href="index.html">Back</a>
+    </nav>
+    <h2>Форма реєстрації</h2>
+    </div>
+    <form class="registration-form" action="#">
+        <label for="fname">Ім'я:</label>
+        <input type="text" id="fname" name="fname" required>
+    
+        <label for="lname">Прізвище:</label>
+        <input type="text" id="lname" name="lname" required>
+    
+        <label for="email">Електронна пошта:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required>
+    
+        <label for="phone">Номер телефону:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+380123456789" required>
+    
+        <label for="dob">Дата народження:</label>
+        <input type="date" id="dob" name="dob" required>
+    
+        <label for="color">Вибір кольору:</label>
+        <input type="color" id="color" name="color" value="#ff0000">
+    
+        <label>Стать:</label>
+        <label for="male">Чоловік</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="female">Жінка</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+    
+        <label for="subscribe">Підписка на новини:</label>
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+        <label for="subscribe">Так, я хочу отримувати новини</label>
+    
+        <label for="country">Країна:</label>
+        <select id="country" name="country" required>
+            <option value="ukraine">Україна</option>
+            <option value="usa">США</option>
+            <option value="canada">Канада</option>
+        </select>
+    
+        <label for="file">Завантажити файл:</label>
+        <input type="file" id="file" name="file">
+    
+        <input type="submit" value="Відправити">
+        <input type="reset" value="Скинути">
+    </form>    
+</body>
+</html>
